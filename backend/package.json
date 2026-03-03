@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-order-backend",
+  "version": "1.0.0",
+  "description": "E-Commerce Order Processing API",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:sync": "node src/config/syncDb.js",
+    "db:seed": "node src/config/seedDb.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.19.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "uuid": "^10.0.0"
+  }
+}
